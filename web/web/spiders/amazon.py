@@ -18,7 +18,7 @@ class amazon(scrapy.Spider):
     def __init__(self):
         url = 'https://www.amazon.com.br/Administra%C3%A7%C3%A3o-Neg%C3%B3cios-e-Economia-Livros/s?rh=n%3A7872854011%2Cp_72%3A17833786011&page='
 
-        for page in range(1, 30):
+        for page in range(1, 100):
             self.start_urls.append(url + str(page))
 
     def parse(self, response):
